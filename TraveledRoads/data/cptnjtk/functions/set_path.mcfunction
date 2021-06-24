@@ -1,1 +1,1 @@
-execute positioned as @a run setblock ~ ~-1 ~ minecraft:grass_path
+execute positioned as @a run setblock ~ ~-1 ~ minecraft:dirt_path
