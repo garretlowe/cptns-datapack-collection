@@ -1,3 +1,7 @@
+1.2
+- Added More Stone Recipes
+- Added Deepslate Recipes
+
 1.1
 - Changed Fence Gate recipes to yield 1 gate per block
 
