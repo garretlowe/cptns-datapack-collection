@@ -1,0 +1,1 @@
+scoreboard objectives add path_randomizer dummy

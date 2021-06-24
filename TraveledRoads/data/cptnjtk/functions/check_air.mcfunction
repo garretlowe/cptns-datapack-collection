@@ -1,0 +1,1 @@
+execute positioned as @a if block ~ ~ ~ minecraft:air run function cptnjtk:check_ground
