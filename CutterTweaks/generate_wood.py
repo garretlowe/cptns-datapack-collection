@@ -5,17 +5,17 @@ OUTPUT_DIR = './data/minecraft/recipes/'
 WOOD_TYPES = ('oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove')
 STEM_TYPES = ('crimson', 'warped')
 
-def write_file(from_wood, to_wood, count):
+def write_file(from_block, to_block, count):
 	new_json = {
 		"type": "minecraft:stonecutting",
 		"ingredient": {
-			"item": f"minecraft:{from_wood}"
+			"item": f"minecraft:{from_block}"
 		},
-		"result": f"minecraft:{to_wood}",
+		"result": f"minecraft:{to_block}",
 		"count": count
 	}
 	
-	with open(OUTPUT_DIR + f"{to_wood}_from_{from_wood}_stonecutting.json", 'w') as file:
+	with open(OUTPUT_DIR + f"{to_block}_from_{from_block}_stonecutting.json", 'w') as file:
 		json.dump(new_json, file, indent=4)
 
 ### PLANKS
