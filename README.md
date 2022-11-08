@@ -1,4 +1,4 @@
-# CptnsDatapackCollection
+# Cptn's Datapack Collection
 Assorted Minecraft Datapacks
 
 ## [CutterTweaks](https://www.planetminecraft.com/data-pack/cuttertweaks-extra-stonecutter-recipes/)
