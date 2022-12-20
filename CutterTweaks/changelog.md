@@ -1,3 +1,6 @@
+1.4
+- Added Bamboo recipes
+
 1.3
 - Added Mangrove recipes
 - Added Mud Bricks recipe

@@ -2,8 +2,9 @@ import json
 
 OUTPUT_DIR = './data/minecraft/recipes/'
 
-WOOD_TYPES = ('oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove')
-STEM_TYPES = ('crimson', 'warped')
+WOOD_TYPES = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove']
+STEM_TYPES = ['crimson', 'warped']
+BLOCK_TYPES = ['bamboo']
 
 def write_file(from_block, to_block, count):
 	new_json = {
@@ -20,19 +21,19 @@ def write_file(from_block, to_block, count):
 
 ### PLANKS
 def planks_to_stairs():
-	for wood in WOOD_TYPES + STEM_TYPES:
+	for wood in WOOD_TYPES + STEM_TYPES + BLOCK_TYPES:
 		write_file(f"{wood}_planks", f"{wood}_stairs", 1)
 
 def planks_to_slabs():
-	for wood in WOOD_TYPES + STEM_TYPES:
+	for wood in WOOD_TYPES + STEM_TYPES + BLOCK_TYPES:
 		write_file(f"{wood}_planks", f"{wood}_slab", 2)
 
 def planks_to_fence():
-	for wood in WOOD_TYPES + STEM_TYPES:
+	for wood in WOOD_TYPES + STEM_TYPES + BLOCK_TYPES:
 		write_file(f"{wood}_planks", f"{wood}_fence", 1)
 
 def planks_to_fence_gate():
-	for wood in WOOD_TYPES + STEM_TYPES:
+	for wood in WOOD_TYPES + STEM_TYPES + BLOCK_TYPES:
 		write_file(f"{wood}_planks", f"{wood}_fence_gate", 1)
 
 
@@ -65,6 +66,9 @@ def log_to_planks():
 			
 	for stem in STEM_TYPES:
 		write_file(f"{stem}_stem", f"{stem}_planks", 4)
+        
+	for block in BLOCK_TYPES:
+		write_file(f"{block}_block", f"{block}_planks", 2)
 	
 def log_to_stripped_log():
 	for wood in WOOD_TYPES:
@@ -72,6 +76,9 @@ def log_to_stripped_log():
 			
 	for stem in STEM_TYPES:
 		write_file(f"{stem}_stem", f"stripped_{stem}_stem", 1)
+        
+	for block in BLOCK_TYPES:
+		write_file(f"{block}_block", f"stripped_{block}_block", 1)
 	
 def log_to_wood():
 	for wood in WOOD_TYPES:
@@ -102,6 +109,9 @@ def stripped_log_to_planks():
 			
 	for stem in STEM_TYPES:
 		write_file(f"stripped_{stem}_stem", f"{stem}_planks", 4)
+			
+	for block in BLOCK_TYPES:
+		write_file(f"stripped_{block}_block", f"{block}_planks", 2)
 	
 def stripped_log_to_stripped_wood():
 	for wood in WOOD_TYPES:
