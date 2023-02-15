@@ -2,7 +2,7 @@ import json
 
 OUTPUT_DIR = './data/minecraft/recipes/'
 
-WOOD_TYPES = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove']
+WOOD_TYPES = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'cherry']
 STEM_TYPES = ['crimson', 'warped']
 BLOCK_TYPES = ['bamboo']
 
