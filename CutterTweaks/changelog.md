@@ -1,3 +1,6 @@
+1.4.1
+- Added Cherry recipes
+
 1.4
 - Added Bamboo recipes
 
