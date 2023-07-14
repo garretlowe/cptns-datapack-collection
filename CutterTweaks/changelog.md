@@ -1,3 +1,6 @@
+1.4.2
+- Updated pack format to 15
+
 1.4.1
 - Added Cherry recipes
 
