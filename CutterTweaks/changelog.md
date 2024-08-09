@@ -1,3 +1,7 @@
+1.4.3
+- Updated pack format to 48
+- Updated pack directories
+
 1.4.2
 - Updated pack format to 15
 
