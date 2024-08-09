@@ -1,6 +1,6 @@
 import json
 
-OUTPUT_DIR = './data/minecraft/recipes/'
+OUTPUT_DIR = './data/cptnjtk/recipe/'
 
 WOOD_TYPES = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'cherry']
 STEM_TYPES = ['crimson', 'warped']
@@ -12,8 +12,10 @@ def write_file(from_block, to_block, count):
 		"ingredient": {
 			"item": f"minecraft:{from_block}"
 		},
-		"result": f"minecraft:{to_block}",
-		"count": count
+		"result": {
+			"id": f"minecraft:{to_block}",
+			"count": count
+		}
 	}
 	
 	with open(OUTPUT_DIR + f"{to_block}_from_{from_block}_stonecutting.json", 'w') as file:
