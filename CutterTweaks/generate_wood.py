@@ -2,7 +2,7 @@ import json
 
 OUTPUT_DIR = './data/cptnjtk/recipe/'
 
-WOOD_TYPES = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'cherry']
+WOOD_TYPES = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'cherry', 'pale_oak']
 STEM_TYPES = ['crimson', 'warped']
 BLOCK_TYPES = ['bamboo']
 
