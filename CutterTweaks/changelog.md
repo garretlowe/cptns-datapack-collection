@@ -1,3 +1,7 @@
+1.5
+- Added pale oak wood
+- Updated pack format to 61
+
 1.4.3
 - Updated pack format to 48
 - Updated pack directories

@@ -9,9 +9,7 @@ BLOCK_TYPES = ['bamboo']
 def write_file(from_block, to_block, count):
 	new_json = {
 		"type": "minecraft:stonecutting",
-		"ingredient": {
-			"item": f"minecraft:{from_block}"
-		},
+		"ingredient": f"minecraft:{from_block}",
 		"result": {
 			"id": f"minecraft:{to_block}",
 			"count": count
