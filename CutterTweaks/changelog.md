@@ -1,3 +1,6 @@
+1.5.2
+- Updated pack format to 80
+
 1.5.1
 - Updated pack format to 71
 
